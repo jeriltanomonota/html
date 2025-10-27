@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id= "judul">hallo dunia!</h1>
+    <button onclick="ubahteks()">tindis jo disini</button>
+    
+    <h1 id="reset"></h1>
+    <button onclick="kka()">reset</button>
+
+    <script>
+        function ubahteks() {
+            var abc = document.getElementById("judul")
+            let jeril = confirm("halaman ini belum lengkap")
+            if (jeril) {
+                abc.innerHTML = "iya"
+            }
+            else {
+                abc.innerHTML = "nynda"
+            }}
+
+        function kka() {
+            document.getElementById("judul").innerHTML='hallo dunia'
+        }
+        
+    
+        </script>
+</body>
+</html>

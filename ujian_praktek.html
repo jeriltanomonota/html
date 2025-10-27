@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout website</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+        header{
+            background-color: rgb(0, 128, 11);
+            color: rgba(252, 248, 248, 0.913);
+            padding: 5px 0;
+            text-align: center;
+        }
+       nav{
+        background-color: rgb(0, 6, 4);
+        overflow: hidden;
+       }
+       nav a{
+        float: left;
+        display: block;
+        color: rgb(248, 246, 249);
+        text-align: center;
+        padding: 1px 20px;
+        text-decoration: none;
+       }
+       nav a:hover {
+        background-color: rgb(255, 255, 255);
+       }
+       .container{
+        display: flex;
+        margin: 20px;
+       }
+
+       .sidebar {
+        flex: 1;
+        padding: 20px;
+        background-color:rgb(249, 244, 224);
+       }
+       footer{
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin-top: 20px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h4>KELAS WEB DESIGN PROJECT UJIAN MID SEMESTER</h4>
+        <P>memuat gabungan antara HTML dan class</p>
+    </header>
+
+    <nav>
+            <a href="#">Home</a>
+            <a href="#">tentang</a>
+            <a href="#">kontak</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+        <main class="container">
+    <section class="content">
+     
+      <div class="hero">
+        
+        <img src="foto chapel.jpg" alt="Universitas" class="hero-img" />
+      </div>
+        </div>
+
+    <div class="sidebar">
+        <h5>Tentang website</h5>
+        <h>website ini adalah contoh latihan HTML + CSS responsif sederhana dengan animasi</h>
+        <ul>
+            <li>menu samping 1</li>
+            <li>menu samping 2</li>
+            <li>menu samping 3</li>
+        </ul>
+    </div>
+</div>
+<h5>Tabel Data</h5>
+<table border="1"
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Kota</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>jeril</td>
+            <td>bitung</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>clif</td>
+            <td>manado</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>liandi</td>
+            <td>aermadidi</td>
+        </tr>
+    </table>
+<fieldset>
+    <legend class="judul">Formulir pendaftaran</legend>
+        <label>Nama:</label>
+        <input type="text" name="nama"><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email"><br><br>
+
+        <h5>Pilih Kota :</h5>
+        <select name="kota">
+            <option>bitung</option>
+            <option>manado</option>
+            <option>Sanger</option>
+            <option>tagulandang</option>
+        </select><br><br>
+
+<label>
+    <input type="checkbox" name="setuju" onclick="jj()"/>
+    Saya setuju dengan syarat & ketentuan
+  </label><br>
+<script>
+    function jj() {
+        alert("kase pasti klo itu data so isi.")
+    }
+    </script>
+
+ <input type="submit" value="Kirim" onclick="kk()">
+<script>
+    function kk() {
+        konfimasi = confirm("ngana so yakin mo kirim ini?")
+        if (konfimasi) {
+            alert("data berhasil di kirim")
+        }
+        else {
+            alert("data batal di kirim")
+        }
+    }
+        </script>
+
+
+ 
+</fieldset>
+<footer>
+        <h3>ini adalah footer</h3>
+        <p>&copy;2025 my website</p>
+        </footer>
+    </text>
+</body>
+</html>

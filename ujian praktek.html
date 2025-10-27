@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ujian praktk</title>
+
+
+    <style>
+        /*style umum*/
+        body{background-color: rgb(105, 107, 107);
+        font-family: arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    
+        
+    }
+    table:hover{
+                transition: transform 0.1 ease;
+        animation: putar 2ms linear infinite;
+    
+        
+    }
+    body:hover{
+        transition: transform 0.1 ease;
+        animation: putar 2s linear infinite;
+    }
+
+
+    /*judul*/
+    .judul {
+        color: rgb(0, 110, 255);
+        text-align: center;
+        font-size: 32px;
+    } 
+
+    .bedak{
+        color: rgb(255, 0, 21);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px; 
+    }
+
+
+    .table{
+        color: rgb(123, 4, 134);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 10;
+    }
+
+    .box{
+        width: 200px;
+        padding: 20px;
+        border: 5px solid green;
+        margin: 30px;
+        background-color: lightblue;
+    }
+
+    .box {
+        position:relative;
+        left: 0px;
+        transition: left 0.5s ease;
+    }
+    .box:hover {
+        left: 100px;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: aqua;
+        border: none;
+        color: blue;
+        transition: backround-color 0.5s ease;
+    }
+
+    .button:hover {
+        background-color: brown;
+        color: bisque;
+    }
+
+    .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.5 ease;
+        animation: putar 4s linear infinite;
+    }
+    @keyframes putar {
+        form{
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>contoh CSS box model</h1>
+<button class="button"> hover jeril tanomonota</button>
+    <div class="box">
+        ini adalah kontak dengan:
+        <ul>
+            <li>padding 20px</li>
+            <li>border 5px warna hijau</li>
+            <li>margin 30px</li>
+            </ul>
+            </div>
+            <div class="box2">rotate</div>
+            <p>perhatikan jarak antara kotak dengan teks</p>
+        
+
+     <h1 class="judul"> formulir pendaftaran workshop html (ujian praktek web design)</h1>
+
+    <p class="bedak">
+        workshop ini menunjukkan untuk memperkenalakan dasar - dasar html 
+        hingga pembuatan form. silahkan isi formulir ini untuk mendaftar sebagai peserta
+    </p>
+
+    <img src="istockphoto-1086208876-612x612.jpg" width="400" height="200"><br>
+    <a href="tentang dan kontak.html">tentang dan kontak</a>
+
+    <h2 class="judul">Jadwal workshop</h2>
+    <table border="3" cellspacing="3" cellpadding="5" class="table">
+        <tr>
+            <th>Tanggal</th>
+            <th>waktu</th>
+            <th>materi</th>
+        </tr>
+        <tr>
+            <td>1 september 2025</td>
+            <td>09.00 - 11.00</td>
+            <td>pengenalan html</td>
+        </tr>
+        <tr>
+            <td>2 september 2025</td>
+            <td>09.00 - 11.00</td>
+            <td>html lanjutan</td>
+        </tr>
+        <tr>
+            <td>3 september 2025</td>
+            <td>09.00 - 11.00</td>
+            <td>project form</td>
+        </tr>
+    </table>
+<fieldset>
+    <legend class="judul">data peserta</legend>
+    <form>
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama"><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email"><br><br>
+
+        <label>password:</label>
+        <input type="password" name="password"><br><br>
+
+        <label>Jenis kelamin :</label>
+        <input type="radio" name="jk" value="laki-laki"> laki-laki
+        <input type="radio" name="jk" value="perempuan"> perempuan
+        <br><br>
+
+        <label>Materi Tambahan :</label><br>
+        <input type="checkbox" name="tambahan" value="materi lanjutan"> materi lanjutan <br>
+        <input type="checkbox" name="tambahan" value="sertifikat"> sertifikat <br><br>
+
+        <label>Pilih Kota :</label>
+        <select name="kota">
+            <option>bitung</option>
+            <option>manado</option>
+            <option>Sanger</option>
+            <option>tagulandang</option>
+        </select><br><br>
+
+        <label>pilih mentor:</label>
+        <input type="text" name="mentor"><br><br>
+
+        <label>Catatan Tambahan:</label><br>
+        <textarea rows="5" cols="40"></textarea><br><br>
+
+        <label>Kuota Terisi:</label><br>
+        <progress value="60" max="100"></progress><br><br>
+
+        <label>Tingkat Penguasaan Peserta:</label><br>
+        <meter value="30" max="100"></meter><br><br>
+
+        <input type="submit" value="Kirim">
+        <input type="reset" value="reset">
+    </form>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Form</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran <b>Mahasiswa Tahun 2030</b></h2>
+    <form action="#" method="post">
+        
+        Nama:
+        <input type="text" name="nama"/><br></br>
+        Email:
+        <input type="email" name="email"/><br></br>
+        password:
+        <input type="password" name="password"/><br></br>
+
+        Jenis Kelamin:
+        <input type="radio" name="gender" value="laki-laki"> Laki-laki
+        <input type="radio" name="gender" value="perempuan"> Perempuan
+        <br><br>
+
+        Hobi:
+        <input type="checkbox" name="hobi" value="membaca"> Membaca
+        <input type="checkbox" name="hobi" value="olahraga"> Olahraga
+        <br><br>
+
+        Jurusan
+        <label for="jurusan">Jurusan:</label>
+        <select name="jurusan" id="jurusan">
+            <option value="informatika">Informatika</option>
+            <option value="sistem informasi">Sistem Informasi</option>
+            <option value="teknik komputer">Teknik Komputer</option>
+        </select>
+        <br><br>
+
+        Kota Asal
+        <label for="kota">Kota Asal:</label>
+        <input type="text" id="kota" name="kota">
+        <br><br>
+
+        Alamat
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="3" cols="30"></textarea>
+        <br><br>
+
+        Nilai Kemampuan HTML
+        <label for="nilai">Nilai Kemampuan HTML:</label>
+        <meter id="nilai" value="0.7" min="0" max="1">70%</meter>
+        <br><br>
+
+        Progress
+        <label for="progress">Progress Pendaftaran:</label>
+        <progress id="progress" value="60" max="100">60%</progress>
+        <br><br>
+
+        Contoh Penjumlahan:
+        <input type="number" value="12"> +
+        <input type="number" value="5"> =
+        <output>17</output>
+        <br><br>
+
+        Tombol
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <br>
+    <a href="index.html">
+      <button>kembali ke halaman utama</button>
+</body>
+</html>
