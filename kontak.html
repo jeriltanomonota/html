@@ -1,25 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Kontak - Web Design Project</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+
+<div class="header">
+  <h1>HALAMAN KONTAK</h1>
+  <p>Hubungi kami untuk informasi lebih lanjut</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="tentang.html">Tentang</a>
+  <a href="kontak.html">Kontak</a>
+</div>
+
+<div class="container">
   <h2>Hubungi Kami</h2>
+  <p>Silakan kirim pesan Anda melalui formulir di bawah ini:</p>
+
   <form>
-    <label for="nama">Nama:</label>
-    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+    <label>Nama:</label>
+    <input type="text" placeholder="Nama lengkap"><br>
+    <label>Email:</label>
+    <input type="email" placeholder="Alamat email"><br>
+    <label>Pesan:</label><br>
+    <textarea rows="4" cols="50" placeholder="Tulis pesan Anda di sini..."></textarea><br>
+    <input type="submit" value="Kirim Pesan">
+  </form>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Masukkan email Anda">
+  <h3>Alamat Kami</h3>
+  <p>Universitas Sam Ratulangi<br>Jl. Kampus Bahu, Manado<br>Email: info@unsrat.ac.id</p>
+</div>
 
-    <label for="pesan">Pesan:</label>
-    <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..."></textarea>
+<div class="footer">
+  ini adalah footer<br>©2025 my website
+</div>
 
-    <button type="submit">Kirim</button>
-  </form>
-</main>
 </body>
 </html>

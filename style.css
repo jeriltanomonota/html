@@ -2,46 +2,118 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
 }
 
-header {
-  background-color: #4CAF50;
+/* Header */
+.header {
+  background-color: #007d00;
   color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Navigasi */
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  background-color: #333;
+}
+
+/* Konten utama */
+.container {
   padding: 20px;
   text-align: center;
 }
 
-nav {
-  background-color: #333;
-  display: flex;
-  justify-content: center;
+/* Gambar utama */
+.hero img {
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 14px 20px;
-}
-
-nav a:hover,
-nav a.active {
-  background-color: #4CAF50;
-}
-
-main {
-  padding: 20px;
-  max-width: 600px;
+/* Tabel */
+table {
   margin: 20px auto;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  border-collapse: collapse;
+  width: 60%;
+  background-color: white;
 }
 
-footer {
-  background-color: #4CAF50;
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Formulir */
+form {
+  margin: 20px auto;
+  width: 60%;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input, select {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #009900;
+}
+
+/* Footer */
+.footer {
+  background-color: #007d00;
   color: white;
   text-align: center;
   padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  font-size: 14px;
+  margin-top: 40px;
+  font-weight: bold;
+  border-top: 3px solid black;
 }
